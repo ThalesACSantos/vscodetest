@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Cursos</title>
+
+    <div class="logo" style="text-align: center;">
+      <img src="assets/mecatecbots_removebg.png" alt="Logo" style="max-width: 100%;">
+    </div>
+    <style>
+        img {
+          max-width: 100%;
+          min-width: 30%;
+          width: 200px;
+          height: 200px;
+          object-fit: cover;
+        }
+
+        head {
+          background-color: #0056b3;
+          padding: 20px 0;
+          text-align: center; /* Centraliza o título */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1920px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #f0f0f0;
+            padding: 20px 0;
+            text-align: center; /* Centraliza o título */
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo */
+            gap: 20px;
+        }
+
+        .course {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden; /* Esconde conteúdo que ultrapassa as bordas */
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Sombra */
+            transition: transform 0.2s; /* Transição suave no hover */
+        }
+
+        .course:hover {
+            transform: translateY(-5px); /* Levemente para cima no hover */
+        }
+
+        .course img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            object-fit: cover; /* Mantém a proporção e cobre o espaço */
+        }
+
+        .course-content {
+            padding: 20px;
+        }
+
+        .course h2 {
+            margin-top: 0;
+        }
+
+        .course p {
+            margin-bottom: 15px;
+        }
+
+        .course a {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+
+        .course a:hover {
+            background-color: #0056b3;
+        }
+
+        .whatsapp-button {
+            position: relative; /* Posiciona o círculo em relação ao botão */
+            overflow: hidden; /* Esconde o conteúdo que ultrapassa as bordas */
+        }
+
+        .whatsapp-circle {
+            position: absolute; /* Posiciona o círculo absolutamente dentro do botão */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #25d366; /* Cor de fundo verde */
+            border-radius: 50%; /* Define o raio para 50% para criar um círculo */
+            z-index: -1; /* Garante que o círculo fique atrás do ícone e do texto */
+        }
+
+        footer {
+          background-color: #333;
+          color: white;
+          text-align: center;
+          padding: 10px 0;
+          position: relative; /* Para o rodapé ficar no final da página */
+          bottom: 0; /* Para o rodapé ficar no final da página */
+          width: 100%; /* Para o rodapé ocupar toda a largura */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Conheça nossos cursos</h1>
+    </header>
+
+    <div class="container">
+        <div class="course-grid">
+
+            <div class="course">
+                <img src="assets/Curso_Python_em_Ação.jpg" alt="Python">
+                <div class="course-content">
+                    <h2>Python em Ação</h2>
+                    <p>Aprenda a programar em Python e desenvolva aplicações incríveis.</p>
+                    <a href="#">Inscreva-se</a>
+                </div>
+            </div>
+
+            <div class="course">
+                <img src="assets/Curso_C++_em_Ação.jpg" alt="C++">
+                <div class="course-content">
+                    <h2>C++ em Ação</h2>
+                    <p>Domine a linguagem C++ e crie softwares de alto desempenho.</p>
+                    <a href="#">Inscreva-se</a>
+                </div>
+            </div>
+
+            <div class="course">
+                <img src="assets/Curso_Desenvolvedor_Front_end.jpg" alt="Front-end">
+                <div class="course-content">
+                    <h2>Front-end</h2>
+                    <p>Crie interfaces web interativas e responsivas com HTML, CSS e JavaScript.</p>
+                    <a href="#">Inscreva-se</a>
+                </div>
+            </div>
+
+            <div class="course">
+                <img src="assets/Curso_Desnvolvedor_Back_end.png" alt="Back-end">
+                <div class="course-content">
+                    <h2>Back-end</h2>
+                    <p>Desenvolva a lógica por trás das aplicações web com as melhores tecnologias.</p>
+                    <a href="#">Inscreva-se</a>
+                </div>
+            </div>
+
+            <div class="course">
+              <img src="assets/Curso_de_Robotica.png" alt="Robótica">
+              <!–<img src="https://via.placeholder.com/400x200/007bff/FFFFFF?text=Robótica" alt="Robótica">
+                <div class="course-content">
+                    <h2>Robótica Educacional</h2>
+                    <p>Aprenda a construir e programar robôs de forma divertida e educativa.</p>
+                    <a href="#">Inscreva-se</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <a href="https://wa.me/+5514988225250?text=Olá, gostaria de saber mais sobre os cursos." class="whatsapp-button" target="_blank">
+      <i class="fab fa-whatsapp"></i> Fale Conosco
+      <img src="assets/whatsapp_icon.svg" alt="WhatsApp Icon" f r style="max-width: 10%; min-width: 5%; max-height: 5%; height: 2%;">
+    
+    </a>
+    <footer>
+      <p>&copy; 2025 Seus Cursos. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
